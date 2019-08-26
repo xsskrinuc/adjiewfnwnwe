@@ -1,0 +1,28 @@
+.bar
+	width: calc(50% - 30px)
+	flex-shrink: 0
+	background-color: #0abde3
+	margin: 15px
+	color: #fff
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 15px
+
+	.bar-drinks
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 20px
+		font-size: 20px
+
+	.bar-order
+		padding: 6px 10px
+		background-color: #ee5253
+		color: #fff
+		font-size: 24px
+		cursor: pointer
+		transition: background-color .2s
+
+		&:hover
+			background-color: darken(#ee5253, 6)

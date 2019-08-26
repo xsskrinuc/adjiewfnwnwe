@@ -1,0 +1,35 @@
+{
+  "name": "exercise_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "nodemon --watch server/ --watch package.json --ignore server/public/ server/server.js",
+    "dev:assets": "webpack --config ./webpack.config.js --watch -p --progress",
+    "start": "NODE_ENV=development run-p dev:server dev:assets"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "ansi-colors": "^4.1.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "express": "^4.17.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "sass-loader": "^7.3.1",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  }
+}
